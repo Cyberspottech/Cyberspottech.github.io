@@ -1,0 +1,254 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+    background-image: url("Images/blackfondo.jpg");
+    background-size: contain; /* Ajusta la imagen para que quepa completamente dentro del contenedor */
+    background-position: center; ; /* La imagen de fondo cubre todo el área */
+    color: #ffffff; /* Color del texto */
+}
+
+
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+
+
+.navbar {
+	background-image: url("Images/blackfondo.jpg"); 
+	background-size: cover; /* La imagen de fondo cubre todo el área sin distorsión */
+    background-position: center; /* Centra la imagen de fondo */
+	border-bottom: 2px solid #000000;
+	border-top: 2px solid #000000;
+	position: sticky;
+	top: 0;
+}
+
+.navbar a {
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: right;
+	color: #ffffff;
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+	background: #0e1012;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* * ============================== */
+/* * ===== CONTENEDOR IMAGEN ====== */
+/* * ============================== */
+
+.contenedor-imagen {
+	position: relative;
+	height: 100vh;
+	border: 2px solid #000000; /* Borde sólido de 2 píxeles de grosor y color negro */
+    text-align: center; 
+}
+
+.contenedor-imagen img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+}
+
+.contenedor-imagen .CYBERNET {
+		position: absolute;
+		top: 23%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		font-size: 3em;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 10px;
+		border-radius: 5px; 
+}
+.contenedor-imagen .logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 350px; /* Ajusta el tamaño del logo */
+	height: auto;
+	border: 2px solid #000; /* Borde negro de 2 píxeles */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra negra */
+	border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+/* * ============================== */
+/* * ============ MAIN ============ */
+/* * ============================== */
+
+main {
+	min-height: 100vh;
+}
+
+main .contenido p {
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+main .contenido .titulo {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-top: 40px;
+}
+
+
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+
+aside {
+	min-width: 30%;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	background-image: url("Images/BlueTech.jpg");
+	padding: 18px;
+	border-radius: 3px;
+	border: 2px solid #fefefe; /* Borde sólido de 2 píxeles de grosor y color negro */
+	position: sticky;
+	box-shadow: 0 0 5px rgb(255, 255, 255); /* Sombra suave */
+	top: 18px;
+	position: sticky;
+	top: 18px;
+}
+aside .titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #fffbfb;
+}
+
+aside .indice a {
+	display: block;
+	margin-bottom: 10px;
+	color: #38bcd9;
+}
+
+/* * ============================== */
+/* * ====== FOOTERS ========= */
+/* * ============================== */
+
+footer .navbar {
+	position: sticky;
+	bottom: 0;
+}
+/*====Sección Acerca de===== */
+
+.acerca-de {
+    background: #fcfcfda7;
+    color: #000000;
+    padding: 60px 0;
+}
+
+.acerca-de .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.acerca-de .izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.acerca-de .izquierda h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.acerca-de .izquierda .logo {
+    max-width: 200px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;
+	border: 2px solid #000; /* Borde negro de 2 píxeles */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra negra */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+.acerca-de .derecha {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.acerca-de .derecha h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.acerca-de .derecha p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 900px){
+	.navbar .contenedor {
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;
+	}
+
+	.navbar a {
+		width: auto;
+		flex: 1;
+	}
+
+	.contenedor-imagen {
+		height: 50vh;
+	}
+
+	main .contenedor {
+		flex-direction: column;
+	}
+}
