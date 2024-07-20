@@ -88,25 +88,36 @@ body {
 
 .contenedor-imagen .CYBERNET {
 		position: absolute;
-		top: 23%;
+		top: 13%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: #fff;
 		font-size: 3em;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgb(0, 0, 0);
 		padding: 10px;
 		border-radius: 5px; 
 }
 .contenedor-imagen .logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Ancho específico de la imagen */
+    height: 280px; /* Altura específica de la imagen */
+    max-width: 100%; /* Ancho máximo de la imagen */
+    max-height: 100%; /* Altura máxima de la imagen */
+    border: 4px solid #000; /* Borde negro de 2 píxeles */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra negra */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.footer-imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 	transform: translate(-50%, -50%);
-	max-width: 350px; /* Ajusta el tamaño del logo */
-	height: auto;
-	border: 2px solid #000; /* Borde negro de 2 píxeles */
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra negra */
-	border-radius: 8px; /* Opcional: bordes redondeados */
+    z-index: 1; /* Asegura que la imagen superpuesta esté encima */
+    opacity: 1; /* Puedes ajustar la opacidad según tus necesidades */
 }
 
 /* * ============================== */
@@ -124,7 +135,7 @@ main .contenido p {
 }
 
 main .contenido .titulo {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cursive', sans-serif;
 	font-weight: normal;
 	padding-top: 40px;
 }
@@ -153,7 +164,7 @@ aside .titulo {
 	font-weight: normal;
 	font-size: 24px;
 	margin-bottom: 20px;
-	color: #fffbfb;
+	color: #fffbfb; 
 }
 
 aside .indice a {
@@ -195,7 +206,7 @@ footer .navbar {
 }
 
 .acerca-de .izquierda h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fantasy', sans-serif;
     font-weight: 600;
     font-size: 36px;
     margin-bottom: 20px;
@@ -206,8 +217,8 @@ footer .navbar {
     height: auto;
     margin-bottom: 20px;
 	border: 2px solid #000; /* Borde negro de 2 píxeles */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra negra */
-    border-radius: 8px; /* Opcional: bordes redondeados */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombra negra */
+    border-radius: 10px; /* Opcional: bordes redondeados */
 }
 
 .acerca-de .derecha {
@@ -216,19 +227,37 @@ footer .navbar {
 }
 
 .acerca-de .derecha h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fantasy', sans-serif;
     font-weight: 500;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
 .acerca-de .derecha p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fantasy', sans-serif;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: left;
 }
+
+/* Estilo para los enlaces dentro de .acerca-de .derecha */
+.acerca-de .derecha a {
+    font-family: 'Fantasy', sans-serif; /* Aplicando la fuente Fantasy */
+    color: #1cc5d4; /* Color azul típico de LinkedIn */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.acerca-de .derecha a[href*="linkedin.com/in/javier-saavedra-and%C3%ADas"] {
+    color: #221fd5; /* Color azul típico de LinkedIn */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.acerca-de .derecha a[href*="linkedin.com/in/javier-saavedra-and%C3%ADas"]:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
 /* * ============================== */
