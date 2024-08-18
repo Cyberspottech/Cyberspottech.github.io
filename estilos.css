@@ -44,7 +44,7 @@ body {
 }
 
 .navbar a {
-	color: #fff;
+	color: #bc1ac2;
 	display: inline-block;
 	padding: 20px;
 	width: 100%;
@@ -91,11 +91,13 @@ body {
 		top: 13%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		color: #fff;
+		color: #ffffff;
 		font-size: 3em;
 		background-color: rgb(0, 0, 0);
 		padding: 10px;
-		border-radius: 5px; 
+		border-radius: 5px;
+		box-shadow: 0 6px 10px rgb(156, 31, 156); /* Añade sombreado */
+	
 }
 .contenedor-imagen .logo {
     position: absolute;
@@ -228,13 +230,30 @@ footer .navbar {
 
 .acerca-de .derecha h3 {
     font-family: 'Fantasy', sans-serif;
-    font-weight: 500;
-    font-size: 25px;
+    font-weight: 700;
+    font-size: 26px;
     margin-bottom: 10px;
+}
+.acerca-de .derecha ul li {
+    font-family: 'Montserrat', sans-serif; /* Asegura la consistencia en la fuente */
+    font-weight: 600; /* Grosor intermedio del texto */
+    font-size: 17px; /* Tamaño del texto */
+    line-height: 1.8; /* Ajusta el espaciado entre líneas */
+    margin-bottom: 15px;
+    color: #000000; /* Color del texto */
+}
+
+.acerca-de .derecha a {
+    font-family: 'Montserrat', sans-serif; /* Cambié a Montserrat para mayor consistencia */
+    font-weight: 650; /* Grosor del texto */
+    font-size: 16px; /* Tamaño del texto */
+    color: #a41fd5; /* Color típico para enlaces */
+    text-decoration: none; /* Quita el subrayado */
 }
 
 .acerca-de .derecha p {
     font-family: 'Fantasy', sans-serif;
+	font-weight: 600; /* Aumenta el grosor del texto (600 para semi-negrita) */
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -249,7 +268,7 @@ footer .navbar {
 }
 
 .acerca-de .derecha a[href*="linkedin.com/in/javier-saavedra-and%C3%ADas"] {
-    color: #221fd5; /* Color azul típico de LinkedIn */
+    color: #1f22d5; /* Color azul típico de LinkedIn */
     text-decoration: none; /* Quitar subrayado */
 }
 
@@ -259,7 +278,7 @@ footer .navbar {
 
 .acerca-de .derecha a {
     font-family: 'Fantasy', sans-serif; /* Aplicando la fuente Fantasy */
-    color: #221fd5; /* Color azul típico para enlaces */
+    color: #1f22d5; /* Color azul típico para enlaces */
     text-decoration: none; /* Quitar subrayado */
 }
 
@@ -268,11 +287,11 @@ footer .navbar {
 }
 
 .acerca-de .derecha a[href^="mailto:"] {
-    color: #221fd5; /* Color distintivo para correos electrónicos, por ejemplo, un tono naranja */
+    color: #1f22d5; /* Color distintivo para correos electrónicos, por ejemplo, un tono naranja */
 }
 
 .acerca-de .derecha a[href^="mailto:"]:hover {
-    color: #221fd5; /* Color al pasar el mouse sobre el enlace de correo electrónico */
+    color: #1f22d5; /* Color al pasar el mouse sobre el enlace de correo electrónico */
 }
 
 
@@ -302,4 +321,12 @@ footer .navbar {
 	aside {
 		position: static;
 	}
+}
+
+/* ====== Custom Highlight Class ====== */
+.highlight {
+    color: rgb(192, 30, 173); /* Cambia "red" por el color que desees para las palabras */
+}
+.highlight2 {
+    color: rgb(55, 202, 215); /* Ejemplo de un color diferente (Tomato red) */
 }
