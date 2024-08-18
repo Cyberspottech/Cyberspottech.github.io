@@ -257,6 +257,24 @@ footer .navbar {
     text-decoration: underline; /* Subrayar al pasar el mouse */
 }
 
+.acerca-de .derecha a {
+    font-family: 'Fantasy', sans-serif; /* Aplicando la fuente Fantasy */
+    color: #221fd5; /* Color azul típico para enlaces */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.acerca-de .derecha a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.acerca-de .derecha a[href^="mailto:"] {
+    color: #221fd5; /* Color distintivo para correos electrónicos, por ejemplo, un tono naranja */
+}
+
+.acerca-de .derecha a[href^="mailto:"]:hover {
+    color: #221fd5; /* Color al pasar el mouse sobre el enlace de correo electrónico */
+}
+
 
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
