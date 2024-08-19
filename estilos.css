@@ -325,6 +325,35 @@ footer .navbar {
 		background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
 		background-position: center; /* Centra la imagen de fondo */
 	}
+
+    .contenedor-imagen .CYBERNET {
+        font-size: 2em; /* Reduce el tamaño de la fuente en el texto CYBERNET */
+        top: 10%; /* Ajusta la posición del texto */
+    }
+
+    .contenedor-imagen .logo {
+        width: 150px; /* Reduce el tamaño del logo */
+        height: 140px; /* Ajusta la altura del logo */
+    }
+
+    .acerca-de .contenedor {
+        flex-direction: column; /* Cambia la dirección a columna para apilar el contenido */
+        align-items: center; /* Centra el contenido */
+        text-align: center;
+    }
+
+    .acerca-de .izquierda,
+    .acerca-de .derecha {
+        padding: 0; /* Elimina el relleno para una mejor visualización */
+        max-width: 100%; /* Permite que los elementos se ajusten al ancho del dispositivo */
+    }
+
+    .footer-imagen {
+        opacity: 0.8; /* Ajusta la opacidad en móviles */
+        width: 100%; /* Ajusta el ancho de la imagen en el pie de página */
+        height: auto;
+    }
+
 }
 
 /* ====== Custom Highlight Class ====== */
