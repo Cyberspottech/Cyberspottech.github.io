@@ -321,12 +321,16 @@ footer .navbar {
 	aside {
 		position: static;
 	}
+	.acerca-de {
+		background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+		background-position: center; /* Centra la imagen de fondo */
+	}
 }
 
 /* ====== Custom Highlight Class ====== */
 .highlight {
-    color: rgb(192, 30, 173); /* Cambia "red" por el color que desees para las palabras */
+    color: rgb(192, 30, 173); 
 }
 .highlight2 {
-    color: rgb(55, 202, 215); /* Ejemplo de un color diferente (Tomato red) */
+    color: rgb(55, 202, 215); /* */
 }
