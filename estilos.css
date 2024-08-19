@@ -18,7 +18,7 @@ a:hover {
 }
 
 body {
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Montserrat', sans-serif;
     background-image: url("Images/blackfondo.jpg");
     background-size: contain; /* Ajusta la imagen para que quepa completamente dentro del contenedor */
     background-position: center; ; /* La imagen de fondo cubre todo el área */
@@ -137,7 +137,7 @@ main .contenido p {
 }
 
 main .contenido .titulo {
-    font-family: 'Cursive', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 	padding-top: 40px;
 }
@@ -162,7 +162,7 @@ aside {
 	top: 18px;
 }
 aside .titulo {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 	font-size: 24px;
 	margin-bottom: 20px;
@@ -208,7 +208,7 @@ footer .navbar {
 }
 
 .acerca-de .izquierda h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 36px;
     margin-bottom: 20px;
@@ -229,7 +229,7 @@ footer .navbar {
 }
 
 .acerca-de .derecha h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 26px;
     margin-bottom: 10px;
@@ -252,7 +252,7 @@ footer .navbar {
 }
 
 .acerca-de .derecha p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-weight: 600; /* Aumenta el grosor del texto (600 para semi-negrita) */
     font-size: 18px;
     line-height: 1.6;
@@ -262,7 +262,7 @@ footer .navbar {
 
 /* Estilo para los enlaces dentro de .acerca-de .derecha */
 .acerca-de .derecha a {
-    font-family: 'Roboto', sans-serif; /* Aplicando la fuente Fantasy */
+    font-family: 'Montserrat', sans-serif; /* Aplicando la fuente Fantasy */
     color: #1cc5d4; /* Color azul típico de LinkedIn */
     text-decoration: none; /* Quitar subrayado */
 }
@@ -277,7 +277,7 @@ footer .navbar {
 }
 
 .acerca-de .derecha a {
-    font-family: 'Roboto', sans-serif; /* Aplicando la fuente Fantasy */
+    font-family: 'Montserrat', sans-serif; /* Aplicando la fuente Fantasy */
     color: #1f22d5; /* Color azul típico para enlaces */
     text-decoration: none; /* Quitar subrayado */
 }
