@@ -1,3 +1,4 @@
+
 * {
 	margin: 0;
 	padding: 0;
@@ -19,10 +20,10 @@ a:hover {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-    background-image: url("Images/blackfondo.jpg");
+    background-image: url("Images/Back00.png");
     background-size: contain; /* Ajusta la imagen para que quepa completamente dentro del contenedor */
     background-position: center; ; /* La imagen de fondo cubre todo el área */
-    color: #ffffff; /* Color del texto */
+    color: #f7f3f3; /* Color del texto */
 }
 
 
@@ -34,7 +35,7 @@ body {
 
 
 .navbar {
-	background-image: url("Images/blackfondo.jpg"); 
+	background-image: url("Images/navbar04.png"); 
 	background-size: cover; /* La imagen de fondo cubre todo el área sin distorsión */
     background-position: center; /* Centra la imagen de fondo */
 	border-bottom: 2px solid #000000;
@@ -44,7 +45,7 @@ body {
 }
 
 .navbar a {
-	color: #bc1ac2;
+	color: #0a1fdf;
 	display: inline-block;
 	padding: 20px;
 	width: 100%;
@@ -86,31 +87,34 @@ body {
 	object-position: 0 bottom;
 }
 
-.contenedor-imagen .CYBERNET {
-		position: absolute;
-		top: 13%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: #ffffff;
-		font-size: 3em;
-		background-color: rgb(0, 0, 0);
-		padding: 10px;
-		border-radius: 5px;
-		box-shadow: 0 6px 10px rgb(156, 31, 156); /* Añade sombreado */
-	
+.contenedor-imagen .Defensys {
+	position: absolute;
+	top: 13%;
+	left: 50%;
+	transform: translateX(-50%); /* ✅ solo centrado horizontal */
+	color: #fcfcfd;
+	font-size: clamp(2em, 2.5vw, 3em); /* ✅ tamaño adaptable a pantallas */
+	background-color: rgb(0, 0, 0);
+	padding: 15px 25px; /* más espacio para textos largos */
+	border-radius: 15px;
+	box-shadow: 0 6px 10px rgb(3, 75, 231); /* sombreado */
+	white-space: nowrap; /* ✅ evita que el texto se corte en dos líneas */
+	max-width: 90%; /* ✅ no se desborda nunca */
+	overflow: hidden; /* si el texto fuera muy largo, no rompe layout */
+	text-align: center;
 }
 .contenedor-imagen .logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px; /* Ancho específico de la imagen */
-    height: 280px; /* Altura específica de la imagen */
-    max-width: 100%; /* Ancho máximo de la imagen */
-    max-height: 100%; /* Altura máxima de la imagen */
-    border: 4px solid #000; /* Borde negro de 2 píxeles */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra negra */
-    border-radius: 8px; /* Bordes redondeados */
+    width: 20vw; /* Escala con el ancho de la ventana */
+    height: auto; /* Mantiene proporción */
+    max-width: 300px; /* límite para que no crezca demasiado */
+    min-width: 180px; /* límite para que no se encoja demasiado */
+    border: 4px solid #000;
+    box-shadow: 0 4px 6px rgba(247, 247, 248, 0.288);
+    border-radius: 8px;
 }
 
 .footer-imagen {
@@ -133,7 +137,7 @@ main {
 main .contenido p {
 	margin-bottom: 20px;
 	line-height: 30px;
-	color: #ffffff;
+	color: #faf4f4;
 }
 
 main .contenido .titulo {
@@ -149,12 +153,12 @@ main .contenido .titulo {
 
 aside {
 	min-width: 30%;
-	margin: 40px 20px 20px 0;
+	margin: 40px 130px 20px 50px;
 	height: 100%;
-	background-image: url("Images/BlueTech.jpg");
+	background-image: url("Images/navbar02.png");
 	padding: 18px;
 	border-radius: 3px;
-	border: 2px solid #fefefe; /* Borde sólido de 2 píxeles de grosor y color negro */
+	border: 2px solid #080808; /* Borde sólido de 2 píxeles de grosor y color negro */
 	position: sticky;
 	box-shadow: 0 0 5px rgb(255, 255, 255); /* Sombra suave */
 	top: 18px;
@@ -172,7 +176,7 @@ aside .titulo {
 aside .indice a {
 	display: block;
 	margin-bottom: 10px;
-	color: #38bcd9;
+	color: #fdfeff;
 }
 
 /* * ============================== */
@@ -186,8 +190,8 @@ footer .navbar {
 /*====Sección Acerca de===== */
 
 .acerca-de {
-    background: #fcfcfda7;
-    color: #000000;
+    background: #1d1d1f8c;
+    color: #fcfcfc;
     padding: 60px 0;
 }
 
@@ -210,16 +214,16 @@ footer .navbar {
 .acerca-de .izquierda h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 30px;
 }
 
 .acerca-de .izquierda .logo {
     max-width: 200px; /* Ajusta el tamaño del logo */
     height: auto;
     margin-bottom: 20px;
-	border: 2px solid #000; /* Borde negro de 2 píxeles */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombra negra */
+	border: 2px solid #000000; /* Borde negro de 2 píxeles */
+    box-shadow: 0 8px 10px rgba(10, 10, 10, 0.3); /* Sombra negra */
     border-radius: 10px; /* Opcional: bordes redondeados */
 }
 
@@ -232,22 +236,22 @@ footer .navbar {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .acerca-de .derecha ul li {
     font-family: 'Montserrat', sans-serif; /* Asegura la consistencia en la fuente */
-    font-weight: 600; /* Grosor intermedio del texto */
+    font-weight: 490; /* Grosor intermedio del texto */
     font-size: 17px; /* Tamaño del texto */
     line-height: 1.8; /* Ajusta el espaciado entre líneas */
     margin-bottom: 15px;
-    color: #000000; /* Color del texto */
+    color: #faf7f7; /* Color del texto */
 }
 
 .acerca-de .derecha a {
-    font-family: 'Montserrat', sans-serif; /* Cambié a Montserrat para mayor consistencia */
+    font-family: 'Montserrat', sans-serif; /* Montserrat para mayor consistencia */
     font-weight: 650; /* Grosor del texto */
     font-size: 16px; /* Tamaño del texto */
-    color: #a41fd5; /* Color típico para enlaces */
+    color: #0c1bf0; /* Color típico para enlaces */
     text-decoration: none; /* Quita el subrayado */
 }
 
@@ -260,19 +264,26 @@ footer .navbar {
     text-align: left;
 }
 
+/* Para el texto "Contacto" y "Email" */
+.acerca-de .derecha li {
+    font-weight: 340; /* Más grueso */
+    color: #fffdfd; /* Texto blanco o el color que prefieras */
+    font-size: 16px; /* Ajusta el tamaño */
+}
+
 /* Estilo para los enlaces dentro de .acerca-de .derecha */
 .acerca-de .derecha a {
-    font-family: 'Montserrat', sans-serif; /* Aplicando la fuente Fantasy */
-    color: #1cc5d4; /* Color azul típico de LinkedIn */
+    font-family: 'Montserrat', sans-serif; /*  fuente Fantasy */
+    color: #0a06eb; /* Color azul típico de LinkedIn */
     text-decoration: none; /* Quitar subrayado */
 }
 
-.acerca-de .derecha a[href*="linkedin.com/in/javier-saavedra-and%C3%ADas"] {
-    color: #1f22d5; /* Color azul típico de LinkedIn */
+.acerca-de .derecha a[href*="linkedin.com/in/"] {
+    color: #070bf1; /* Color azul típico de LinkedIn */
     text-decoration: none; /* Quitar subrayado */
 }
 
-.acerca-de .derecha a[href*="linkedin.com/in/javier-saavedra-and%C3%ADas"]:hover {
+.acerca-de .derecha a[href*="linkedin.com/in/"]:hover {
     text-decoration: underline; /* Subrayar al pasar el mouse */
 }
 
@@ -287,11 +298,11 @@ footer .navbar {
 }
 
 .acerca-de .derecha a[href^="mailto:"] {
-    color: #1f22d5; /* Color distintivo para correos electrónicos, por ejemplo, un tono naranja */
+    color: #080cece8; /* Color distintivo para correos electrónicos, por ejemplo, un tono naranja */
 }
 
 .acerca-de .derecha a[href^="mailto:"]:hover {
-    color: #1f22d5; /* Color al pasar el mouse sobre el enlace de correo electrónico */
+    color: #1f22d5ec; /* Color al pasar el mouse sobre el enlace de correo electrónico */
 }
 
 
@@ -326,8 +337,8 @@ footer .navbar {
 		background-position: center; /* Centra la imagen de fondo */
 	}
 
-    .contenedor-imagen .CYBERNET {
-        font-size: 2em; /* Reduce el tamaño de la fuente en el texto CYBERNET */
+    .contenedor-imagen .Defensys {
+        font-size: 2em; /* Reduce el tamaño de la fuente en el texto Defensys */
         top: 10%; /* Ajusta la posición del texto */
     }
 
@@ -349,7 +360,7 @@ footer .navbar {
     }
 
     .footer-imagen {
-        opacity: 0.8; /* Ajusta la opacidad en móviles */
+        opacity: 0.8; /* Ajusta la opacidad en cell */
         width: 100%; /* Ajusta el ancho de la imagen en el pie de página */
         height: auto;
     }
@@ -358,8 +369,8 @@ footer .navbar {
 
 /* ====== Custom Highlight Class ====== */
 .highlight {
-    color: rgb(192, 30, 173); 
+    color: rgb(7, 84, 250); 
 }
 .highlight2 {
-    color: rgb(55, 202, 215); /* */
+    color: rgb(254, 255, 255); /* */
 }
